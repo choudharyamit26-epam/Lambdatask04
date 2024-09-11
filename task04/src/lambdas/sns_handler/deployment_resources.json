@@ -1,0 +1,16 @@
+{
+  "sns_handler-role": {
+    "predefined_policies": [
+      "AmazonSNSFullAccess",
+      "AWSLambdaBasicExecutionRole"
+    ],
+    "principal_service": "lambda",
+    "custom_policies": [
+      "lambda-basic-execution"
+    ],
+    "resource_type": "iam_role",
+    "logs_expiration": "${logs_expiration}",
+    "Action": "sns:Subscribe",
+    "Resource": "*"
+  }
+}
